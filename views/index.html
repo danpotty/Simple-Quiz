@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<title>coder-camps-js</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" type="text/css" href="bootstrap/dist/css/bootstrap.min.css">
+	<link rel="stylesheet" type="text/css" href="/css/bootstrap_theme.min.css">
+	<link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+	<script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+	<link rel="stylesheet" type="text/css" href="/css/site.css">
+</head>
+
+<body>
+	<br>
+	<div id="all">
+		<div class="well container" style="text-align:center">
+			<div id="intro">
+				<h4>Welcome to the easiest (if you use google) quiz you will ever take!</h4>
+				<p style="color:rgba(225, 247, 25, 0.72)">When you're ready to begin, click start...</p><br><br>
+				<button onclick="run()" id="button">Start</p>
+			</div>
+
+			<div id="quiz"></div>
+			<p id="comment"></p>
+			<div id="showAnswers"></div>
+
+			<!-- <button id="button" onclick="showAnswers()">modal</button> -->
+
+		</div>
+
+		<div class="container">
+
+			<!-- Modal -->
+			<div class="modal fade" id="myModal" role="dialog">
+				<div class="modal-dialog">
+
+					<!-- Modal content-->
+					<div class="modal-content">
+						<div class="modal-header">
+							<button type="button" class="close" data-dismiss="modal" id="button">&times;</button>
+							<h4 class="modal-title" style="text-align:center;size:3em;">Answers</h4>
+						</div>
+						<div class="modal-body">
+							<h3>Who created JavaScript?</h3>
+							<p>Answer:
+								<strong>Brendan Eich</strong>
+								<br>Guido van Rossum created Python, Yukihiro Matsumoto made Ruby, and Dennis Ritchie was the pioneer who gave us C.</p>
+							<h3>Which planet has the highest surface temperature?</h3>
+							<p>Answer:
+								<strong>Venus</strong>
+								<br>Although Mercury is closer to the sun, it lacks the atmosphere necessary to retain heat.</p>
+							<h3>Which one of the following US presidents was assassinated?</h3>
+							<p>Answer:
+								<strong>James A. Garfield</strong>
+								<br>Shot in the chest by Charles Guiteau, Garfield died a couple months later as a result of infections. With today's knowledge of medicine he almost certainly would have survived...</p>
+							<h3>Who currently plays guitar for Blink-182?</h3>
+							<p>Answer:
+								<strong>Matt Skiba</strong>
+								<br>Although the position was formerly filled by Tom Delonge for the band's entire 20+ year tenure, due to conflicts among the band members Tom was recently replaced by Alkaline Trio's Matt Skiba.</p>
+							<h3>How many bytes are in a gigabyte?</h3>
+							<p>Answer:
+								<strong>1,073,741,824</strong>
+								<br>Although giga generally refers to 1 billion, bytes are counted in binary (a gigabyte is 2^30) and hence do not perfectly coincide with landmark decimal numbers.</p>
+						</div>
+						<div class="modal-footer">
+							<button type="button" class="btn btn-default" data-dismiss="modal" id="close_btn">&times;</button>
+						</div>
+					</div>
+
+				</div>
+			</div>
+
+		</div>
+
+	</div>
+	<script src="/javascript/app.js"></script>
+</body>
+
+</html>
